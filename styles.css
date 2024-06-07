@@ -3,9 +3,37 @@
   padding: 0px;
 }
 
-.container-div-index {
-  max-width: 50%;
-  height: 800px;
-  margin: auto;
-  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+.container-nav {
+  height: 80px;
+  background: #241b37;
+  max-width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-logo-img {
+  width: 85px;
+  margin-left: 50px;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  margin-right: 50px;
+}
+
+.nav-item {
+  padding: 25px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: larger;
+}
+
+.nav-link:hover {
+  color: #f5851d;
 }
