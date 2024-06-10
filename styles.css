@@ -37,3 +37,7 @@
 .nav-link:hover {
   color: #f5851d;
 }
+
+#container-introduction {
+  font-size: 60px;
+}
