@@ -1,10 +1,3 @@
-html {
-  height: 100%;
-  overflow: hidden;
-  background: linear-gradient(270deg, #1b1429, #140f23);
-  -webkit-font-smoothing: antialiased;
-}
-
 #stars1 {
   width: 1px;
   height: 1px;
