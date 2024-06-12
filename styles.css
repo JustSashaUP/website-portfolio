@@ -3,6 +3,12 @@
   padding: 0px;
 }
 
+html {
+  height: 100%;
+  background: linear-gradient(270deg, #1b1429, #140f23);
+  -webkit-font-smoothing: antialiased;
+}
+
 ::selection {
   background: #9784c230;
 }
@@ -46,11 +52,20 @@
   font-size: 50px;
   line-height: 100px;
   font-family: "Courier New", Courier, monospace;
+  white-space: nowrap;
+  float: left;
   color: #aaddff;
 }
 
 .container-border {
   align-items: center;
   max-width: auto;
-  margin: 150px 50px 0px 50px;
+  margin: 100px 50px 0px 50px;
+}
+
+#model-container {
+  width: 50px;
+  height: 500px;
+  display: inline;
+  position: fixed;
 }
