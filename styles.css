@@ -3,6 +3,10 @@
   padding: 0px;
 }
 
+::selection {
+  background: #9784c230;
+}
+
 .container-nav {
   height: 80px;
   background: #241b37;
@@ -38,6 +42,15 @@
   color: #f5851d;
 }
 
-#container-introduction {
-  font-size: 60px;
+#container-h1-intro {
+  font-size: 50px;
+  line-height: 100px;
+  font-family: "Courier New", Courier, monospace;
+  color: #aaddff;
+}
+
+.container-border {
+  align-items: center;
+  max-width: auto;
+  margin: 150px 50px 0px 50px;
 }
