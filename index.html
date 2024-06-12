@@ -4,19 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="styles.css" type="text/css" rel="stylesheet" />
-    <!--<link href="stars.css" type="text/css" rel="stylesheet" />-->
+    <link href="stars.css" type="text/css" rel="stylesheet" />
     <title>Alexandr Savchenko</title>
   </head>
   <body id="body-index">
-    <div class="star-background">
-      <div id="stars1"></div>
-      <div id="stars2"></div>
-    </div>
+    <div id="stars1"></div>
+    <div id="stars2"></div>
     <div>
       <nav>
         <div class="container-nav">
-          <a href="index.html"
-            ><img
+          <a href="index.html">
+            <img
               class="nav-logo-img"
               src="sources/images/logo.png"
               alt="Logo"
@@ -32,19 +30,39 @@
         </div>
       </nav>
     </div>
-    <div class="container-border">
+    <div class="container-inline-border">
       <div>
         <h1 id="container-h1-intro">
           Hi
           <img
             src="sources/images/hand-waving.gif"
             alt="hand-waving"
-            style="width: 70px"
+            style="width: 50px"
           />, i'm Sasha<br />Java Software Engineer<br />
           from Ukraine 🌍
         </h1>
       </div>
       <div id="model-container"></div>
+    </div>
+    <div class="container-border">
+      <ul>
+        <li class="text-li-item">☕ <strong>I’m learning Java.</strong></li>
+        <li class="text-li-item">
+          🧑‍💻 <strong>I’m currently writing code.</strong>
+        </li>
+        <li class="text-li-item">
+          🧠
+          <strong
+            >I'm diving deep into the world of software engineering,<br />
+            &nbsp&nbsp&nbspexploring new horizons and expanding my
+            expertise.</strong
+          >
+        </li>
+        <li class="text-li-item">
+          🤝
+          <strong>I am ready to collaborate on an interesting project.</strong>
+        </li>
+      </ul>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
@@ -53,16 +71,11 @@
 
       function init() {
         scene = new THREE.Scene();
-        camera = new THREE.PerspectiveCamera(
-          50,
-          window.innerWidth / (window.innerHeight + 700),
-          0.1,
-          1000
-        );
-        camera.position.set(0.1, 1.2, 2);
+        camera = new THREE.PerspectiveCamera(60, 550 / 800, 0.1, 1000);
+        camera.position.set(0, 1, 2);
 
         renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
-        renderer.setSize(window.innerWidth / 2, window.innerHeight);
+        renderer.setSize(500, 700);
         renderer.setClearColor(0x000000, 0);
         document
           .getElementById("model-container")
@@ -120,9 +133,9 @@
       const clock = new THREE.Clock();
 
       window.addEventListener("resize", () => {
-        camera.aspect = window.innerWidth / 2 / window.innerHeight;
+        camera.aspect = 550 / 800;
         camera.updateProjectionMatrix();
-        renderer.setSize(window.innerWidth / 2, window.innerHeight);
+        renderer.setSize(550, 800);
       });
 
       init();
