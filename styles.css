@@ -44,10 +44,6 @@ html {
   font-size: larger;
 }
 
-.nav-link:hover {
-  color: #f5851d;
-}
-
 #container-h1 {
   font-size: 50px;
   line-height: 100px;
@@ -96,12 +92,21 @@ html {
   width: 50px;
   height: 50px;
   margin-left: 5px;
+  margin-right: 5px;
   background: rgb(44, 36, 62);
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: width 0.3s, height 0.3s, background 0.3s;
+}
+
+#underline:hover {
+  background: linear-gradient(to right, #aaddff, #aaddff, #aaddff);
+  background-size: 100% 0.1em, 0 0.1em;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background 0.3s;
 }
 
 #circle:hover {
