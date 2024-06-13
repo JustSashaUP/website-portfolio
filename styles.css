@@ -48,7 +48,7 @@ html {
   color: #f5851d;
 }
 
-#container-h1-intro {
+#container-h1 {
   font-size: 50px;
   line-height: 100px;
   font-family: "Courier New", Courier, monospace;
@@ -60,7 +60,7 @@ html {
 .container-inline-border {
   align-items: center;
   display: flex;
-  margin: 100px 50px 0px 50px;
+  margin: 50px 50px 0px 50px;
   justify-content: space-between;
 }
 
@@ -90,4 +90,27 @@ html {
   width: 100%;
   height: 100%;
   z-index: -1;
+}
+
+#circle {
+  width: 50px;
+  height: 50px;
+  margin-left: 5px;
+  background: rgb(44, 36, 62);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: width 0.3s, height 0.3s, background 0.3s;
+}
+
+#circle:hover {
+  width: 55px;
+  height: 55px;
+  background: #9784c230;
+}
+
+.circle-item {
+  width: 35px;
+  height: 35px;
 }
