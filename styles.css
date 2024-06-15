@@ -179,3 +179,42 @@ html {
 .pulse-bubble-3 {
   animation: pulse 0.4s ease 0.4s infinite alternate;
 }
+
+.image-box {
+  width: 450px;
+  height: auto;
+  max-width: 450px;
+  object-fit: cover;
+  border-radius: 5%;
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+    rgba(236, 175, 229, 0.8) -6px -2px 16px 0px;
+}
+
+.image-box:hover {
+  animation: pulse 1s ease 0s infinite alternate;
+}
+
+.container-div-image {
+  padding-top: 100px;
+  text-align: center;
+  flex: 1;
+}
+
+.caption {
+  font-size: large;
+  font-family: "Courier New", Courier, monospace;
+  white-space: nowrap;
+  color: #ffffff;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.container-inline-block {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
