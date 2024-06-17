@@ -88,9 +88,9 @@ html {
   z-index: -1;
 }
 
-#circle {
-  width: 50px;
-  height: 50px;
+.circle {
+  width: 40px;
+  height: 40px;
   margin-left: 5px;
   margin-right: 5px;
   background: rgb(44, 36, 62);
@@ -109,15 +109,15 @@ html {
   transition: background 0.3s;
 }
 
-#circle:hover {
-  width: 55px;
-  height: 55px;
+.circle:hover {
+  width: 50px;
+  height: 50px;
   background: #9784c230;
 }
 
 .circle-item {
-  width: 35px;
-  height: 30px;
+  width: 30px;
+  height: 25px;
 }
 
 .container-loader {
