@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>In Development</title>
+    <link href="styles.css" type="text/css" rel="stylesheet" />
+    <title>Alexandr Savchenko | Resume</title>
     <style>
       body {
         background-color: black;
@@ -39,10 +40,16 @@
     </style>
   </head>
   <body>
+    <div id="container-loader">
+      <div class="bubble pulse-bubble-1"></div>
+      <div class="bubble pulse-bubble-2"></div>
+      <div class="bubble pulse-bubble-3"></div>
+    </div>
     <img class="dev-icon" src="sources/images/mafu.gif" alt="mafumafu" />
     <div class="message">In developing...</div>
     <button onclick="locateTo()">Home</button>
   </body>
+  <script src="loader.js"></script>
   <script>
     function locateTo() {
       window.location.href = "index.html";
