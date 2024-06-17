@@ -1,9 +1,8 @@
-function loader() {
-  document.querySelector(".container-loader").classList.add("active");
-}
+function loadPage() {
+  var loader = document.getElementById("container-loader");
 
-function fadeOut() {
-  setTimeout(loader, 1000);
+  window.addEventListener("load", function () {
+    loader.style.display = "none";
+  });
 }
-
-fadeOut();
+loadPage();
