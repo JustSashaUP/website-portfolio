@@ -23,7 +23,7 @@ html {
 }
 
 .nav-logo-img {
-  width: 85px;
+  width: 55px;
   margin-left: 50px;
 }
 
@@ -217,4 +217,232 @@ html {
 
 a {
   text-decoration: none;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  body {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  html {
+    height: 100%;
+    background: linear-gradient(270deg, #1b1429, #140f23);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  ::selection {
+    background: #9784c230;
+  }
+
+  .container-nav {
+    height: 65px;
+    background: #241b37;
+    max-width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav-logo-img {
+    width: 55px;
+    margin-left: 15px;
+  }
+
+  .nav-bar {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+  }
+
+  .nav-item {
+    padding: 5px;
+  }
+
+  .nav-link {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: large;
+  }
+
+  #container-h1 {
+    font-size: 25px;
+    line-height: 50px;
+    font-family: "Courier New", Courier, monospace;
+    white-space: nowrap;
+    float: left;
+    color: #aaddff;
+  }
+
+  .container-inline-border {
+    align-items: center;
+    display: grid;
+    margin: 100px 15px 0px 25px;
+    justify-content: space-between;
+  }
+
+  .container-border {
+    margin: 50px 50px 0px 50px;
+  }
+
+  canvas {
+    width: 225px;
+    height: 400px;
+  }
+
+  .text-li-item {
+    font-size: 25px;
+    font-family: "Courier New", Courier, monospace;
+    white-space: nowrap;
+    float: left;
+    color: #aaddff;
+  }
+
+  #model-container {
+    width: 225px;
+    height: 400px;
+    margin-top: 20px;
+  }
+
+  #stars1,
+  #stars2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+
+  .circle {
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background: rgb(44, 36, 62);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: width 0.3s, height 0.3s, background 0.3s;
+  }
+
+  #underline:hover {
+    background: linear-gradient(to right, #aaddff, #aaddff, #aaddff);
+    background-size: 100% 0.1em, 0 0.1em;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background 0.3s;
+  }
+
+  .circle:hover {
+    width: 40px;
+    height: 40px;
+    background: #9784c230;
+  }
+
+  .circle-item {
+    width: 20px;
+    height: 15px;
+  }
+
+  .container-loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #241b37;
+    z-index: 10000;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container-loader.active {
+    display: none;
+  }
+
+  #container-loader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #241b37;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+  }
+
+  @keyframes pulse {
+    from {
+      opacity: 1;
+      transform: scale(1);
+    }
+    to {
+      opacity: 0.25;
+      transform: scale(0.75);
+    }
+  }
+
+  .bubble {
+    width: 20px;
+    height: 20px;
+    padding-left: 2;
+    background: #4f29f0;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .pulse-bubble-1 {
+    animation: pulse 0.4s ease 0s infinite alternate;
+  }
+  .pulse-bubble-2 {
+    animation: pulse 0.4s ease 0.2s infinite alternate;
+  }
+  .pulse-bubble-3 {
+    animation: pulse 0.4s ease 0.4s infinite alternate;
+  }
+
+  .image-box {
+    width: 225px;
+    height: auto;
+    max-width: 225px;
+    object-fit: cover;
+    border-radius: 5%;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+      rgba(236, 175, 229, 0.8) -6px -2px 16px 0px;
+  }
+
+  .image-box:hover {
+    animation: pulse 1s ease 0s infinite alternate;
+  }
+
+  .container-div-image {
+    padding-top: 100px;
+    text-align: center;
+    flex: 1;
+  }
+
+  .caption {
+    font-size: large;
+    font-family: "Courier New", Courier, monospace;
+    white-space: nowrap;
+    color: #ffffff;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .container-inline-block {
+    display: grid;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  a {
+    text-decoration: none;
+  }
 }
